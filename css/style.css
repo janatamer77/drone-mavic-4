@@ -23,9 +23,13 @@ body , h1 , h2, h3 , h4 , h5 {
 .p-10{
     padding: 10px;
 }
+.py-15{
+    padding: 15px 0;
+}
 .py-20{
     padding: 20px 0;
 }
+
 .m-20{
     margin: 20px;
 }
@@ -58,7 +62,7 @@ body , h1 , h2, h3 , h4 , h5 {
 h1{
     margin-top: 20px;
     font-weight: 600;
-    font-size: 350%;
+    font-size: 250%;
 }
 .bg-c1{
     background-color: #00BBA7;
@@ -149,7 +153,7 @@ h1{
     z-index: 99999;
 }
 .container{
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
 }
 ul{
@@ -221,17 +225,23 @@ ul{
     width: 100%;
 }
 /* home */
+.content-home .p-info{
+    justify-content: flex-start;
+    align-items: center;
+
+} 
 .p-home{
     background-color: #A684FF;
     color: #fff;
     border-radius: 10px;
     padding:  3px 10px;
-    margin: 0 5px;
+    margin: 5px; 
 }
 .home{
     justify-content: center;
-    align-items: center;
-    padding: 50px;
+    align-items:flex-start;
+    /* padding: 50px; */
+    padding: 50px 20px ;
     margin: 50px 0;
     
 }
@@ -243,6 +253,7 @@ ul{
     padding: 10px 0 ;
     position: relative;
     border-radius: 20px;
+    margin-top: 20px;
 }
 .home-img span{
     position: absolute;
@@ -260,7 +271,7 @@ ul{
 }
 .content-home{
     width: 100%;
-    padding: 30px;
+    /* padding: 30px; */
 }
 .cach{
     align-items: flex-start;
@@ -290,7 +301,8 @@ ul{
     width: 100%;
     padding:15px 25px ;
     border-radius: 20px;
-    margin: 10px;
+    margin: 10px 0;
+    margin-right: 20px;
     font-size: 110%;
     font-weight: 600;
     transition:transform 0.5s ;
@@ -436,6 +448,7 @@ ul{
 .rat{
     border-radius: 7px;
     width: 70%;
+    /* width: 100%; */
     background-color: #cfd0d3;
 }
 .rat div{
@@ -631,7 +644,6 @@ ul{
     color: #fff;
     padding: 30px;
 }
-
 .footer-content {
     display: flex;
     flex-wrap: wrap;
@@ -660,25 +672,20 @@ ul{
     width: 80%;
     display: block;
 }
-
 .footer-card1 .logo h2 {
     font-size: 28px;
     width: 80% ;
 }
-
 .footer-card1  p {
     color:#fff;
     font-size: 14px;
     line-height: 1.8;
     margin-bottom: 25px;
 }
-
-/* Social Icons */
 .social-icons {
     align-items: center;
     gap: 15px;
 }
-
 .social-icons a {
     width: 38px;
     height: 38px; 
@@ -687,8 +694,17 @@ ul{
     border-radius: 8px;
     transition: background-color 0.3s ease;
 }
-.social-icons a:hover {
-    background-color: #344054;
+.icon-hover1:hover{
+    background-color: #1877F2;
+}
+.icon-hover3:hover{
+    background-color: #1DA1F2;
+}
+.icon-hover2:hover{
+    background-color: #E4405F;
+}
+.icon-hover4:hover{
+    background-color: #FF0000;
 }
 .social-icons img {
     width: 100%;
@@ -712,31 +728,22 @@ ul{
 .footer-card li {
     margin-bottom: 15px;
 }
-
 .footer-card a {
     color: #98a2b3;
     text-decoration: none;
     font-size: 14px;
     transition: color 0.3s ease;
 }
-
 .footer-card a:hover {
     color: #fff;
 }
-
-.footer hr {
-    border: none;
-    border-top: 1px solid #344054;
-    margin: 35px 0 25px;
-}
-
 /* Bottom Footer */
 .footer-pay {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    border-top: 1px solid #344054;
+    margin: 35px 0 25px;
 }
 
 .content-footer-pay {
@@ -749,8 +756,8 @@ ul{
     line-height: 1.8;
 }
 
-/* Payment Images */
 .img-pay {
+    margin-top: 20px;
     width: auto;
     display: flex;
     flex-wrap: wrap;
@@ -889,11 +896,18 @@ ul{
     .right-nav a{
         display: flex;
     }
+    .home{
+        padding: 50px;
+    }
     .home-img{
         width: 50%;
     }
     .content-home{
         width: 50%;
+        padding: 30px;
+    }
+    .p-home{
+        margin: 0 5px;
     }
     .product-card{
         width: 25%;
